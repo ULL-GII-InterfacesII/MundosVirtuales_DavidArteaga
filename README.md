@@ -27,13 +27,13 @@
 
  `transform.Translate(3,3,3);`
 
- `transform.Rotate(0.0f, 30.0f, 0.0f);`
+ `transform.Rotate(0.0, 30.0, 0.0);`
 
  ### 5. Como rotarías un objeto sobre el eje (1,1,1)
 
  `transform = GetComponent<Transform>();`
 
- `transform.Rotate(30.0f, 30.0f, 30.0f);`
+ `transform.Rotate(30.0, 30.0, 30.0);`
 
  ### 6. Rota un objeto alrededor del eje Y 30ª y desplázalo 3 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado que en 4?
 
