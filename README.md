@@ -17,23 +17,23 @@
 
  ### 3. Cómo situarías un objeto en la posición (3,5,1)
 
- `transform = GetComponent<Transform>();  
+ `transform = GetComponent<Transform>(); ` 
 
- transform.position = new Vector3(3,5,1);`
+ `transform.position = new Vector3(3,5,1);`
 
  ### 4. Como trasladarías 3 metros en cada uno de los ejes y luego lo rotas 30º alrededor del eje Y?
 
- `transform = GetComponent<Transform>();
+ `transform = GetComponent<Transform>();`
 
- transform.Translate(3,3,3);
+ `transform.Translate(3,3,3);`
 
- transform.Rotate(0.0f, 30.0f, 0.0f);`
+ `transform.Rotate(0.0f, 30.0f, 0.0f);`
 
  ### 5. Como rotarías un objeto sobre el eje (1,1,1)
 
- `transform = GetComponent<Transform>();
+ `transform = GetComponent<Transform>();`
 
- transform.Rotate(30.0f, 30.0f, 30.0f);`
+ `transform.Rotate(30.0f, 30.0f, 30.0f);`
 
  ### 6. Rota un objeto alrededor del eje Y 30ª y desplázalo 3 metros en cada uno de los ejes. ¿Obtendrías el 
  mismo resultado que en 4?
