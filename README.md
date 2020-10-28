@@ -16,5 +16,5 @@
 
  ### 3. Cómo situarías un objeto en la posición (3,5,1)
 
- `transform = GetComponent<Transform>()  
- transform.position = new Vector3(3,5,1)`
+ `transform = GetComponent<Transform>();  
+ transform.position = new Vector3(3,5,1);`
