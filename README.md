@@ -35,7 +35,7 @@
 
  `transform.Rotate(30.0f, 30.0f, 30.0f);`
 
- ### 6. Rota un objeto alrededor del eje Y 30ª y desplázalo 3 metros en cada uno de los ejes. ¿Obtendrías el 
+ ### 6. Rota un objeto alrededor del eje Y 30ª y desplázalo 3 metros en cada uno de los ejes. ¿Obtendrías el
  mismo resultado que en 4?
 
  No, ya que al realizar primero la rotación, el sistema de referencia local del objeto cambia, por lo que al
