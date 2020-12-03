@@ -39,3 +39,59 @@
 
  No, ya que al realizar primero la rotación, el sistema de referencia local del objeto cambia, por lo que al
  realizar la traslación lo estaremos haciendo hacia direcciones distintas. 
+
+ ### 7. Como puedes obtener la distancia al plano cerca del volumen de vista desde la cámara
+
+ `camera = GetComponent<Camera>()`
+ `camera.nearClipPlane;`
+
+ ### 8. Como puedes aumentar el ángulo de la cámara
+
+ `camera = GetComponent<Camera>();`
+ `camera.fieldOfView += x;`
+
+ ### 9. Qué efecto tiene disminuir el ángulo de la cámara.
+
+ Se disminuye el campo de visión por lo que se verán menos objetos de la escena, sin embargo, estos parecerán mucho más grandes.
+
+ ### 10. Configura un volumen de vista que recorte objetos de la escena.
+
+ Para lograrlo modificamos el ángulo de la camara hasta encajar el objeto en la posición que queramos.
+
+ ### 11. Como puedes realizar la proyección al espacio 2D
+
+ Cambiando el valor de proyección a Ortographic en las propiedades de la clase Camera.
+
+ ### 12. Especifica la rotación de los apartados 4 y 6 con la utilidad quaternion.
+
+ `transform = GetComponent<Transform>()`
+ `transform.rotation = Quaternion.Euler(0, 30, 0)`
+
+ ### 13. ¿Como puedes averiguar la matriz de proyección en perspectiva que se ha usado para proyectar la escena al último frame renderizado?
+ 
+ Con la propiedad `previousViewProjectionMatrix` de Camera.
+
+ ### 14. ¿Como puedes averiguar la matriz de proyección en perspectiva ortográfica que se ha usado para proyectar la escena al último frame renderizado?
+
+ Con la propiedad anterior pero con la vista ortogonal activada.
+
+ ### 15. ¿Cómo puedes obtener la matriz de transformación entre el sistema de coordenadas local y el mundial?.
+
+ - Local: `cameraToWorldMatrix` del component Camera.
+ - Mundial: `localToWorldMatrix` del component Transform.
+
+ ### 16. Cómo puedes obtener la matriz para cambiar al sistema de referencia de vista
+
+ Usando la propiedad localToWorldMatrix del component Transform.
+
+ ### 17. Especifica la matriz de la proyección usado en un instante de la ejecución del ejercicio 1 de la práctica 1.
+
+
+ ### 18. Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práctica 1.
+
+
+ ### 19. Aplica una rotación en el start de uno de los objetos de la escena y muestra la matriz de cambio al sistema de referencias mundial.
+
+
+ ### 20. ¿Como puedes calcular las coordenadas del sistema de referencia de un objeto con las siguientes propiedades del Transform:?: Position (3, 1, 1), Rotation (45, 0, 45)
+
